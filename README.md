@@ -17,7 +17,17 @@ I tried to train the model on my local environment (I am using a M1 based MacBoo
 Since ConvNeXt has also implemented Weight & Biases tools, it is more convenient for me to set-up the W&B and record my training logs easier.
 
 ## Results
-The final accuracy achieved by ConvNeXt_tiny was 84.13%, while the final accuracy achieved by ConvNeXt_small was 88.15%. The training logs and trained models are available in the logs and checkpoints directories, respectively.
+Here is the result of models after being evaluated with Test Data. 
+
+| Architecture     | Specific Configuration                         | Top-1 Accuracy |
+|------------------|------------------------------------------------|----------------|
+| ConvNeXt Tiny    | Batch size 32, color jitter 0.5, smoothing 0.2 | 85.885         |
+| ConvNeXt Small   | Batch size 32                                  | 85.172         |
+| ConvNeXt Tiny    | Batch size 32                                  | 83.389         |
+| ConvNeXt Tiny    | Batch size 64                                  | 83.312         |
+
+
+From the result I got, I think it is more suitable to use smaller batch size and implement data augmentation when you try to train a model from scratch with relatively small dataset such as Imagenette.
 
 ## Reproducing
 To reproduce the results, follow these steps:
