@@ -16,7 +16,7 @@ The final accuracy achieved by ConvNeXt_tiny was 84.13%, while the final accurac
 ## Reproducing
 To reproduce the results, follow these steps:
 
-Clone this repository: git clone https://github.com/[USERNAME]/[REPOSITORY_NAME].git
+Clone this repository: git clone https://github.com/lolikgiovi/ConvNeXt-Repro.git
 Open the ConvNeXt_Training.ipynb notebook in Google Colaboratory.
 Follow the instructions in the notebook to train the models.
 Note that training the models can take several hours depending on the compute resources available.
