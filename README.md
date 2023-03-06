@@ -8,7 +8,7 @@ The dataset used for this project is [Imagenette2](https://github.com/fastai/ima
 I trained two variants of ConvNeXt architectures in this project: ConvNeXt-Tiny and ConvNeXt-Small. Both models use the architecture and hyperparameters as described in the official ConvNeXt paper. The models were trained from scratch using the Imagenette2 dataset. The reason I am taking this two models is the architecture of them are less complicated than the bigger ones. Since I tried to train the model with a relatively small dataset, the less complicated architecture should fit better.
 
 ## Training
-To train the models, I used Google Colaboratory, which provides free access to a GPU. The models were trained for 100 epochs with a batch size of 32 and 64, and a learning rate of 4e-3. The optimizer used was AdamW, and the dropout rate was set to 0.1. The input size of the images was 160x160 pixels. I followed the official [Installation](https://github.com/facebookresearch/ConvNeXt/blob/main/INSTALL.md) and [Training](https://github.com/facebookresearch/ConvNeXt/blob/main/TRAINING.md) from ConvNeXt repository. I documented my training process [in this notebook]().
+To train the models, I used Google Colaboratory, which provides free access to a GPU. The models were trained for 100 epochs with a batch size of 32 and 64, and a learning rate of 4e-3. The optimizer used was AdamW, and the dropout rate was set to 0.1. The input size of the images was 160x160 pixels. I followed the official [Installation](https://github.com/facebookresearch/ConvNeXt/blob/main/INSTALL.md) and [Training](https://github.com/facebookresearch/ConvNeXt/blob/main/TRAINING.md) from ConvNeXt repository. I documented my training process [in this notebook](https://github.com/lolikgiovi/ConvNeXt-Repro/blob/main/Training_History.ipynb).
 
 ## GPU Requirement
 I tried to train the model on my local environment (I am using a M1 based MacBook), but the training always failed due to the unavailability of CUDA. Then, I switched to use Google Colaboratory with a Colab Pro subscription. I tried to choose to train using CPU than GPU by adding parameter argument when training, or even adding the code to train using CPU. The problem might be that my configuration is too high for CPU Training. More or less, I ended up have to train using a single GPU on colab. When I checked on the paper once more, I think the model is designed to train on GPU more or less.
@@ -33,7 +33,7 @@ Here is the result of models after being evaluated with Test Data.
 From the result I got, I think it is more suitable to use smaller batch size and implement data augmentation when you try to train a model from scratch with relatively small dataset such as Imagenette.
 
 ## Reproducing
-To reproduce the results, follow these steps in [this notebook]().
+To reproduce the results, follow these steps in [this notebook](https://github.com/lolikgiovi/ConvNeXt-Repro/blob/main/Training_ConvNeXt.ipynb).
 
 Acknowledgements
 The official implementation of ConvNeXt is available at https://github.com/facebookresearch/ConvNeXt. The Imagenette2 dataset was created by fast.ai.
