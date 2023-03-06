@@ -26,7 +26,7 @@ Here is the result of models after being evaluated with Test Data.
 | ConvNeXt-T    | Batch size 32                                  | 83.389         | [Link](https://drive.google.com/file/d/1me7f5HmgqM5f4-AxGnKQ-3LcUzk7NAvs/view?usp=share_link) |
 | ConvNeXt-T    | Batch size 64                                  | 83.312         | [Link](https://drive.google.com/file/d/1klxyPyjyYi2LLMj8VUTchXsoPMOwVcU_/view?usp=share_link) |
 
-
+Training Accuracy Trend:
 ![Training Acc](https://user-images.githubusercontent.com/59627864/222997332-5c6932c6-fb37-4dd8-ac62-dc2a9683384b.png)
 
 
