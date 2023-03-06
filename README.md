@@ -21,10 +21,10 @@ Here is the result of models after being evaluated with Test Data.
 
 | Architecture     | Specific Configuration                         | Top-1 Accuracy | Model |
 |------------------|------------------------------------------------|----------------|-------|
-| ConvNeXt Tiny    | Batch size 32, color jitter 0.5, smoothing 0.2 | 85.885         | [Link]() |
-| ConvNeXt Small   | Batch size 32                                  | 85.172         | [Link]() |
-| ConvNeXt Tiny    | Batch size 32                                  | 83.389         | [Link]() |
-| ConvNeXt Tiny    | Batch size 64                                  | 83.312         | [Link]() |
+| ConvNeXt-T    | Batch size 32, color jitter 0.5, smoothing 0.2 | 85.885         | [Link](https://drive.google.com/file/d/1WgZHE80WELCdxjGSLj94UTfo_EueDoBm/view?usp=share_link) |
+| ConvNeXt-S   | Batch size 32                                  | 85.172         | [Link](https://drive.google.com/file/d/1SIVKlTS_6kJ5yRIA8rK3pu1UYGT6pUJq/view?usp=share_link) |
+| ConvNeXt-T    | Batch size 32                                  | 83.389         | [Link](https://drive.google.com/file/d/1me7f5HmgqM5f4-AxGnKQ-3LcUzk7NAvs/view?usp=share_link) |
+| ConvNeXt-T    | Batch size 64                                  | 83.312         | [Link](https://drive.google.com/file/d/1klxyPyjyYi2LLMj8VUTchXsoPMOwVcU_/view?usp=share_link) |
 
 
 ![Training Acc](https://user-images.githubusercontent.com/59627864/222997332-5c6932c6-fb37-4dd8-ac62-dc2a9683384b.png)
